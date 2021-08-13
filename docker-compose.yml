@@ -2,10 +2,10 @@ version: '3.4'
 
 services:
   mccotter-net-api:
-    image: bjmccotter7192/mccotter-net-api:latest
+    image: bjmccotter7192/mccotter-net-api:main
     ports:
       - 5000:5000
   mccotter-net-ui:
-    image: bjmccotter7192/mccotter-net-ui:latest
+    image: bjmccotter7192/mccotter-net-ui:main
     ports:
       - 8080:80
