@@ -2,11 +2,15 @@
 
 echo "Let's get this thing deployed"
 
-echo "Bringing down the docker containers"
+echo "Stopping the docker containers"
 
-docker-compose down
+docker-compose stop
 
-echo "Now let's pull the new images from dockerhub"
+echo "Removing the docker containers"
+
+docker-compose rm -f 
+
+echo "Pulling for latest Docker tag"
 
 docker-compose pull
 
