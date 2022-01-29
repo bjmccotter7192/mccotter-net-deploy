@@ -3,9 +3,11 @@ version: '3.4'
 services:
   mccotter-net-api:
     image: bjmccotter7192/mccotter-net-api:main
+    restart: always
     ports:
       - 5000:5000
   mccotter-net-ui:
     image: bjmccotter7192/mccotter-net-ui:main
+    restart: always
     ports:
       - 8080:80
