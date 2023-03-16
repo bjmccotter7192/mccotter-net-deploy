@@ -6,8 +6,11 @@ services:
     restart: always
     ports:
       - 5000:5000
+  
   mccotter-net-ui:
     image: bjmccotter7192/mccotter-net-ui:main
     restart: always
     ports:
       - 8080:80
+    environment:
+      SENDGRID_API_KEY: ${SENDGRID_API_KEY}
